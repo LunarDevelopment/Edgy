@@ -1,0 +1,52 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+/*
+$light:                           #fff !default;
+$stable:                          #777777 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #555555 !default;
+*/
+// The path for our ionicons font files, relative to the built & temporary module.css
+$ionicons-font-path: "../assets/fonts" !default;
+
+// Include all of Ionic
+@import "../../bower_components/ionic/scss/ionic";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300italic,400italic,700italic,700,900);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic); 
+
+.hr-positive {
+  @include hr-ball($positive, 'positive-nudge', 10px);
+}
+.hr-light {
+  @include hr-ball($light, 'light-nudge', 10px);
+}
+.hr-stable {
+  @include hr-ball($stable, 'stable-nudge', 10px);
+}
+.hr-calm {
+  @include hr-ball($calm, 'calm-nudge', 10px);
+}
+.hr-balanced {
+  @include hr-ball($balanced, 'balanced-nudge', 10px);
+}
+.hr-energized {
+  @include hr-ball($energized, 'energized-nudge', 10px);
+}
+.hr-assertive {
+  @include hr-ball($assertive, 'assertive-nudge', 10px);
+}
+.hr-royal {
+  @include hr-ball($royal, 'royal-nudge', 10px);
+}
+.hr-dark {
+  @include hr-ball($dark, 'dark-nudge', 10px);
+}

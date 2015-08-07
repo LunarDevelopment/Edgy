@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <!-- CONTENT -->
+  <ion-side-menu-content>
+
+    <!-- header bar -->
+    <!-- the nav bar will be updated as we navigate between views -->
+    <ion-nav-bar class="bar-dark">
+      <!-- back button, shown if applicable -->
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <!-- nav button, shown if applicable -->
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button pull-right button-clear button-calm">Share</button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- ROUTING INJECTED HERE: pageContent -->
+    <ion-nav-view name="pageContent"></ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <!-- SIDEMENU -->
+  <ion-side-menu side="left">
+
+    <!-- menu header -->
+    <ion-header-bar class="bar-balanced">
+      <h1 class="title">Nav</h1>
+    </ion-header-bar>
+
+    <!-- menu content -->
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ui-sref="main.positive" class="item-positive">
+          Positive
+        </ion-item>
+        <ion-item menu-close ui-sref="main.light" class="item-light">
+          Light
+        </ion-item>
+        <ion-item menu-close ui-sref="main.stable" class="item-stable">
+          Stable
+        </ion-item>
+        <ion-item menu-close ui-sref="main.calm" class="item-calm">
+          Calm
+        </ion-item>
+        <ion-item menu-close ui-sref="main.balanced" class="item-balanced">
+          Balanced
+        </ion-item>
+        <ion-item menu-close ui-sref="main.energized" class="item-energized">
+          Energized
+        </ion-item>
+        <ion-item menu-close ui-sref="main.assertive" class="item-assertive">
+          Assertive
+        </ion-item>
+        <ion-item menu-close ui-sref="main.royal" class="item-royal">
+          Royal
+        </ion-item>
+        <ion-item menu-close ui-sref="main.dark" class="item-dark">
+          Dark
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+  </ion-side-menu>
+
+</ion-side-menus>
