@@ -95,14 +95,14 @@ $button-bar-button-icon-size:     20px !default;
 
 $button-light-bg:                 $light !default;
 $button-light-text:               $dark !default;
-$button-light-border:             #ddd !default;
-$button-light-active-bg:          #fafafa !default;
-$button-light-active-border:      #ccc !default;
+$button-light-border:             darken($light, 10%) !default;
+$button-light-active-bg:          darken($light, 5%) !default;
+$button-light-active-border:      darken($light, 20%) !default;
 
 $button-stable-bg:                $stable !default;
 $button-stable-text:              $dark !default;
-$button-stable-border:            #b2b2b2 !default;
-$button-stable-active-bg:         #e5e5e5 !default;
+$button-stable-border:            lighten($stable, 20%) !default;
+$button-stable-active-bg:         lighten($stable, 15%) !default;
 $button-stable-active-border:     darken($stable, 20%) !default;
 
 $button-positive-bg:              $positive !default;
